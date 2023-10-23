@@ -10,4 +10,4 @@ RUN  apt-get update && apt-get install -y python3 python3-pip
 
 USER jenkins
 
-RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/
+RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
