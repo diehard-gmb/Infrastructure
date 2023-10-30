@@ -16,4 +16,22 @@ unclassified:
     url:  "http://192.168.44.44.:8880"
   locale:
     ignoreAcceptLanguage: true
-    systemLocale: "en"    
+    systemLocale: "en"
+  sonarGlobalConfiguration:
+    buildWrapperEnabled: false
+    installations:
+    - name: "SonarQube"
+      serverUrl: "192.168.44.44:9000"
+      triggers:
+        skipScmCause: false
+        skipUpstreamCause: false
+tool:
+  sonarRunnerInstallation:
+    installations:
+    - name: "SonarQube Scanner"
+      properties:
+      - installSource:
+          installers:
+          - sonarRunnerInstaller:
+              id: "5.0.1.3006"       
+    
