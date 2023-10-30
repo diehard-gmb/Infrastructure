@@ -6,10 +6,11 @@ jenkins:
           name: "panda"
           permissions:
           - "Overall/Administer"
-  securityRealm:
+  securityRealm:  
       local:
         users:
         - id: "panda"
           password: "panda"          
+unclassified:          
   location:
     url:  "http://192.168.44.44.:8880"
