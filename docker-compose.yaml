@@ -8,4 +8,4 @@ services:
       - "8880:8080"
     restart: always
     volumes:
-    - ~/work/Infrastructure/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
+    - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
