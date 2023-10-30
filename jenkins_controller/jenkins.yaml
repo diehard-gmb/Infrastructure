@@ -15,5 +15,5 @@ unclassified:
   location:
     url:  "http://192.168.44.44.:8880"
   locale:
-    ignoreAcceptLanguage: false
-    systemLocale: "en_US"    
+    ignoreAcceptLanguage: true
+    systemLocale: "en"    
