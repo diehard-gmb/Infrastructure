@@ -93,3 +93,7 @@ tool:
           - sonarRunnerInstaller:
               id: "5.0.1.3006"       
     
+jobs:
+  - file: /usr/share/jenkins/ref/jobs/backend.groovy
+  - file: /usr/share/jenkins/ref/jobs/frontend.groovy
+  - file: /usr/share/jenkins/ref/jobs/app_of_apps.groovy
