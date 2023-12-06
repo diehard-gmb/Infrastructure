@@ -68,6 +68,10 @@ credentials:
                 o1epS4clbUspxKat9tbIIRccKa9GWXVDNLih8TslLCBoL/knJc+aqw==
                 -----END RSA PRIVATE KEY-----
           scope: GLOBAL
+jobs:
+  - file: /usr/share/jenkins/ref/jobs/backend.groovy
+  - file: /usr/share/jenkins/ref/jobs/frontend.groovy
+  - file: /usr/share/jenkins/ref/jobs/app_of_apps.groovy
 
 unclassified:          
   location:
@@ -93,16 +97,11 @@ tool:
           - sonarRunnerInstaller:
               id: "5.0.1.3006"       
     
-jobs:
-  - file: /usr/share/jenkins/ref/jobs/backend.groovy
-  - file: /usr/share/jenkins/ref/jobs/frontend.groovy
-  - file: /usr/share/jenkins/ref/jobs/app_of_apps.groovy
-
   terraform:
     installations:
-    - name: "terraform"
+    - name: "Terraform"
       properties:
       - installSource:
           installers:
           - terraformInstaller:
-              id: "31130-linux-amd64"    
+              id: "20413-linux-amd64"
